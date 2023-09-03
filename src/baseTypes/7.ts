@@ -14,12 +14,20 @@ enum Days {
 }
 
 function isWeekend(day: Days): boolean {
-  if (day === Days.SATURDAY || day === Days.SUNDAY) {
-    return true;
-  } else {
-    return false;
-  }
+  return day === Days.SATURDAY || day === Days.SUNDAY;
 }
 
 const today = Days.FRIDAY;
 console.log(isWeekend(today));
+
+// function isWeekend(day: Days): boolean {
+//   return day === Days.SATURDAY || day === Days.SUNDAY ? true : false;
+// }
+
+// function isWeekend(day: Days): boolean {
+//   if (day === Days.SATURDAY || day === Days.SUNDAY) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
